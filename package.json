@@ -1,0 +1,29 @@
+{
+  "name": "object-evolution",
+  "version": "0.1.0",
+  "description": "Analyze changes made to an object",
+  "author": "Arjo Bruijnes <dev@arjobruijn.es>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "cross-env TS_NODE_PROJECT=\"webpack.tsconfig.json\" webpack",
+    "package": "echo '🚧 Packaging!';return 1",
+    "test": "echo '🚧 Testing!';return 1"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/webpack-dev-server": "^4.7.2",
+    "chrome-types": "0.1.246",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "7.0.3",
+    "css-loader": "6.8.1",
+    "ts-loader": "9.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.3.3",
+    "web-ext-plugin": "2.9.0",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
