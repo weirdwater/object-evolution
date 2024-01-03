@@ -1,6 +1,6 @@
 import path from "path";
 import { Configuration, ProgressPlugin } from "webpack";
-import CopyPlugin from "copy-webpack-plugin"
+import BrowserExtensionManifestPlugin from "./BrowserExtensionManifestPlugin"
 
 
 const config: Configuration = {
@@ -23,7 +23,7 @@ const config: Configuration = {
     },
     plugins: [
         new ProgressPlugin(),
-        // new CopyPlugin()
+        new BrowserExtensionManifestPlugin({ template: "src/manifest.json" })
     ]
 }
 
